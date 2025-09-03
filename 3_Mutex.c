@@ -4,7 +4,7 @@
 #include <pthread.h>
 
 int mails = 0;
-pthread_mutex_t mut; // # of mutexes = # of shared resources. Mutexes must be decaled globally.
+pthread_mutex_t mut; // # of mutexes = # of shared resources. Mutexes must be declared globally.
 
 void* routine(void *args) {
     printf("In threads");
@@ -40,3 +40,4 @@ int main() {
 /// A mutex (mutual exclusion) is a synchronization tool that acts as a lock to protect shared resources from concurrent access by multiple threads,
 /// ensuring only one thread can acquire the lock and enter the "critical section" (the part of the code that accesses the resource) at a time.
 /// By preventing simultaneous access, mutexes prevent race conditions and guarantee the consistency of shared data.
+
