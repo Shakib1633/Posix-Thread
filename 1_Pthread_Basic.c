@@ -21,7 +21,7 @@ void* computation(void* add) //Must provide argument as void* and return type as
 
 int main()
 {
-// pthread_t will be used to uniquely identify, create, and manage threads
+// pthread_t will be used to uniquely identify, create, and manage KERNEL-LEVEL threads
   pthread_t thread1;
   pthread_t thread2;
 
@@ -162,3 +162,4 @@ int main()
 ///                     execution PAUSES here until thread done
 ///
 ///
+
